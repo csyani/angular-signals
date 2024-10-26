@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, signal } from '@angular/core';
 import { MatTabGroup, MatTab } from '@angular/material/tabs';
 
 @Component({
@@ -8,4 +8,10 @@ import { MatTabGroup, MatTab } from '@angular/material/tabs';
   templateUrl: './home.component.html',
   styleUrl: './home.component.scss',
 })
-export class HomeComponent {}
+export class HomeComponent {
+  counter = signal(0);
+
+  increment() {
+    this.counter.set(this.counter() + 1);
+  }
+}

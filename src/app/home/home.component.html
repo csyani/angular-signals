@@ -1,7 +1,10 @@
 <div class="heroes-panel">
-    <h3>All Heroes</h3>
+    <h3>All Heroes: {{counter()}}</h3>
     <button class="btn">
       Add Hero
+    </button>
+    <button class="btn" (click)="increment()">
+        Increment
     </button>
     <mat-tab-group>
       <mat-tab label="Beginners"></mat-tab>
