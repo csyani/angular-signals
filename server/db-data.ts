@@ -1,4 +1,4 @@
-import { Hero } from '../src/type';
+import { Hero } from '../src/models/hero.model';
 
 export const HEROES: Record<number, Hero> = {
   1: {

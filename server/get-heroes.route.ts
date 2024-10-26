@@ -1,6 +1,6 @@
 import { Request, Response } from 'express';
 import { HEROES } from './db-data';
-import { Hero } from '../src/type';
+import { Hero } from '../src/models/hero.model';
 
 export function getAllHeroes(req: Request, res: Response) {
   setTimeout(() => {
